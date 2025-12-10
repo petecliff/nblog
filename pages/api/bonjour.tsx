@@ -1,5 +1,4 @@
-import * as http from 'http';
-
-export default function handler(req: http.IncomingMessage, res: http.ServerResponse) {
+import { NextApiRequest, NextApiResponse } from 'next';
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
     res.status(200).json({ message: 'Bonjour!' });
 }
